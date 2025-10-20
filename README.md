@@ -22,11 +22,13 @@ The main tables include:
 * `Lembur`
 * `Riwayat_Gaji`
 
-(You can add your PDM image here)
+
+![Diagram PDM Sistem Gaji](PDM_Payroll.jpg)
 
 ## 💻 Tech Stack
 * **Database:** PostgreSQL
 * **Tool:** Navicat
+* **Data Dummy Generator:** Excel, [Data Dummy Maker](https://smalldev.tools/test-data-generator-online)
 
 ## 📂 Repository Contents
 * **/sql-scripts**: Contains SQL scripts for the database structure (DDL), the 15 nested queries, and (optionally) dummy data generation scripts.
