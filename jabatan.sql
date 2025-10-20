@@ -1,0 +1,46 @@
+-- ----------------------------
+-- Table structure for jabatan
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."jabatan";
+CREATE TABLE "public"."jabatan" (
+  "id_jabatan" int4 NOT NULL,
+  "nama_jabatan" varchar(100) COLLATE "pg_catalog"."default",
+  "gaji_pokok" numeric(12,2),
+  "id_tunjangan" int4
+)
+;
+
+-- ----------------------------
+-- Records of jabatan
+-- ----------------------------
+INSERT INTO "public"."jabatan" VALUES (1, 'Direktur Utama
+Direktur Utama', 20000000.00, 1);
+INSERT INTO "public"."jabatan" VALUES (2, 'Direktur Operasional
+Direktur Operasional', 18000000.00, 2);
+INSERT INTO "public"."jabatan" VALUES (3, 'Manajer Keuangan', 14000000.00, 3);
+INSERT INTO "public"."jabatan" VALUES (4, 'Manajer SDM', 14000000.00, 4);
+INSERT INTO "public"."jabatan" VALUES (5, 'Supervisor Akuntasi', 10000000.00, 5);
+INSERT INTO "public"."jabatan" VALUES (6, 'Supervisor HR', 10000000.00, 6);
+INSERT INTO "public"."jabatan" VALUES (7, 'Staf Senior Keuangan', 7000000.00, 7);
+INSERT INTO "public"."jabatan" VALUES (8, 'Senior HRD', 7000000.00, 8);
+INSERT INTO "public"."jabatan" VALUES (9, 'Staf Akuntasi', 5000000.00, 9);
+INSERT INTO "public"."jabatan" VALUES (10, 'Junior HRD', 5000000.00, 10);
+INSERT INTO "public"."jabatan" VALUES (11, 'Admin', 4000000.00, 11);
+INSERT INTO "public"."jabatan" VALUES (12, 'Customer Service', 4000000.00, 12);
+INSERT INTO "public"."jabatan" VALUES (13, 'Teknisi IT', 4500000.00, 13);
+INSERT INTO "public"."jabatan" VALUES (14, 'Cleaning Service', 3000000.00, 14);
+INSERT INTO "public"."jabatan" VALUES (15, 'Office Boy', 2800000.00, 15);
+INSERT INTO "public"."jabatan" VALUES (16, 'Internship', 2000000.00, 16);
+INSERT INTO "public"."jabatan" VALUES (17, 'Graphic Designer', 6000000.00, 17);
+INSERT INTO "public"."jabatan" VALUES (18, 'Staf Gudang', 4000000.00, 18);
+INSERT INTO "public"."jabatan" VALUES (19, 'Satpam', 3500000.00, 19);
+
+-- ----------------------------
+-- Primary Key structure for table jabatan
+-- ----------------------------
+ALTER TABLE "public"."jabatan" ADD CONSTRAINT "jabatan_pkey" PRIMARY KEY ("id_jabatan");
+
+-- ----------------------------
+-- Foreign Keys structure for table jabatan
+-- ----------------------------
+ALTER TABLE "public"."jabatan" ADD CONSTRAINT "jabatan_id_tunjangan_fkey" FOREIGN KEY ("id_tunjangan") REFERENCES "public"."tunjangan" ("id_tunjangan") ON DELETE NO ACTION ON UPDATE NO ACTION;

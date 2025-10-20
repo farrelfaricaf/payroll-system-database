@@ -1,0 +1,226 @@
+-- ----------------------------
+-- Table structure for lembur
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."lembur";
+CREATE TABLE "public"."lembur" (
+  "id_lembur" int4 NOT NULL,
+  "id_karyawan" int4,
+  "jumlah_jam" int4,
+  "upah_lembur" numeric(12,2),
+  "tanggal" date
+)
+;
+
+-- ----------------------------
+-- Records of lembur
+-- ----------------------------
+INSERT INTO "public"."lembur" VALUES (1, 8, 4, 200000.00, '2025-01-01');
+INSERT INTO "public"."lembur" VALUES (2, 3, 2, 100000.00, '2025-01-01');
+INSERT INTO "public"."lembur" VALUES (3, 3, 4, 200000.00, '2025-01-01');
+INSERT INTO "public"."lembur" VALUES (4, 9, 2, 100000.00, '2025-01-01');
+INSERT INTO "public"."lembur" VALUES (5, 2, 5, 250000.00, '2025-01-01');
+INSERT INTO "public"."lembur" VALUES (6, 7, 2, 100000.00, '2025-01-01');
+INSERT INTO "public"."lembur" VALUES (7, 9, 2, 100000.00, '2025-01-01');
+INSERT INTO "public"."lembur" VALUES (8, 1, 2, 100000.00, '2025-01-02');
+INSERT INTO "public"."lembur" VALUES (9, 7, 4, 200000.00, '2025-01-02');
+INSERT INTO "public"."lembur" VALUES (10, 6, 1, 50000.00, '2025-01-02');
+INSERT INTO "public"."lembur" VALUES (11, 3, 5, 250000.00, '2025-01-02');
+INSERT INTO "public"."lembur" VALUES (12, 9, 3, 150000.00, '2025-01-02');
+INSERT INTO "public"."lembur" VALUES (13, 8, 2, 100000.00, '2025-01-02');
+INSERT INTO "public"."lembur" VALUES (14, 9, 2, 100000.00, '2025-01-02');
+INSERT INTO "public"."lembur" VALUES (15, 1, 2, 100000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (16, 5, 1, 50000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (17, 1, 4, 200000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (18, 6, 1, 50000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (19, 10, 2, 100000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (20, 9, 3, 150000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (21, 6, 3, 150000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (22, 5, 2, 100000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (23, 10, 3, 150000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (24, 7, 5, 250000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (25, 10, 3, 150000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (26, 7, 5, 250000.00, '2025-01-03');
+INSERT INTO "public"."lembur" VALUES (27, 3, 5, 250000.00, '2025-01-04');
+INSERT INTO "public"."lembur" VALUES (28, 9, 4, 200000.00, '2025-01-04');
+INSERT INTO "public"."lembur" VALUES (29, 4, 2, 100000.00, '2025-01-05');
+INSERT INTO "public"."lembur" VALUES (30, 2, 4, 200000.00, '2025-01-05');
+INSERT INTO "public"."lembur" VALUES (31, 1, 2, 100000.00, '2025-01-05');
+INSERT INTO "public"."lembur" VALUES (32, 2, 1, 50000.00, '2025-01-05');
+INSERT INTO "public"."lembur" VALUES (33, 2, 2, 100000.00, '2025-01-05');
+INSERT INTO "public"."lembur" VALUES (34, 7, 3, 150000.00, '2025-01-06');
+INSERT INTO "public"."lembur" VALUES (35, 3, 3, 150000.00, '2025-01-06');
+INSERT INTO "public"."lembur" VALUES (36, 10, 4, 200000.00, '2025-01-06');
+INSERT INTO "public"."lembur" VALUES (37, 6, 2, 100000.00, '2025-01-06');
+INSERT INTO "public"."lembur" VALUES (38, 10, 1, 50000.00, '2025-01-06');
+INSERT INTO "public"."lembur" VALUES (39, 3, 3, 150000.00, '2025-01-06');
+INSERT INTO "public"."lembur" VALUES (40, 8, 2, 100000.00, '2025-01-06');
+INSERT INTO "public"."lembur" VALUES (41, 4, 2, 100000.00, '2025-01-07');
+INSERT INTO "public"."lembur" VALUES (42, 9, 1, 50000.00, '2025-01-07');
+INSERT INTO "public"."lembur" VALUES (43, 6, 2, 100000.00, '2025-01-07');
+INSERT INTO "public"."lembur" VALUES (44, 1, 1, 50000.00, '2025-01-07');
+INSERT INTO "public"."lembur" VALUES (45, 10, 4, 200000.00, '2025-01-07');
+INSERT INTO "public"."lembur" VALUES (46, 5, 2, 100000.00, '2025-01-07');
+INSERT INTO "public"."lembur" VALUES (47, 1, 3, 150000.00, '2025-01-07');
+INSERT INTO "public"."lembur" VALUES (48, 6, 3, 150000.00, '2025-01-07');
+INSERT INTO "public"."lembur" VALUES (49, 1, 5, 250000.00, '2025-01-07');
+INSERT INTO "public"."lembur" VALUES (50, 8, 1, 50000.00, '2025-01-07');
+INSERT INTO "public"."lembur" VALUES (51, 8, 3, 150000.00, '2025-01-08');
+INSERT INTO "public"."lembur" VALUES (52, 5, 4, 200000.00, '2025-01-08');
+INSERT INTO "public"."lembur" VALUES (53, 5, 4, 200000.00, '2025-01-08');
+INSERT INTO "public"."lembur" VALUES (54, 4, 1, 50000.00, '2025-01-08');
+INSERT INTO "public"."lembur" VALUES (55, 1, 4, 200000.00, '2025-01-08');
+INSERT INTO "public"."lembur" VALUES (56, 10, 3, 150000.00, '2025-01-08');
+INSERT INTO "public"."lembur" VALUES (57, 7, 5, 250000.00, '2025-01-09');
+INSERT INTO "public"."lembur" VALUES (58, 9, 5, 250000.00, '2025-01-09');
+INSERT INTO "public"."lembur" VALUES (59, 2, 2, 100000.00, '2025-01-09');
+INSERT INTO "public"."lembur" VALUES (60, 4, 3, 150000.00, '2025-01-09');
+INSERT INTO "public"."lembur" VALUES (61, 3, 3, 150000.00, '2025-01-10');
+INSERT INTO "public"."lembur" VALUES (62, 9, 4, 200000.00, '2025-01-10');
+INSERT INTO "public"."lembur" VALUES (63, 7, 3, 150000.00, '2025-01-10');
+INSERT INTO "public"."lembur" VALUES (64, 2, 5, 250000.00, '2025-01-10');
+INSERT INTO "public"."lembur" VALUES (65, 5, 5, 250000.00, '2025-01-10');
+INSERT INTO "public"."lembur" VALUES (66, 9, 2, 100000.00, '2025-01-10');
+INSERT INTO "public"."lembur" VALUES (67, 3, 4, 200000.00, '2025-01-10');
+INSERT INTO "public"."lembur" VALUES (68, 10, 1, 50000.00, '2025-01-10');
+INSERT INTO "public"."lembur" VALUES (69, 9, 3, 150000.00, '2025-01-10');
+INSERT INTO "public"."lembur" VALUES (70, 7, 5, 250000.00, '2025-01-10');
+INSERT INTO "public"."lembur" VALUES (71, 7, 4, 200000.00, '2025-01-11');
+INSERT INTO "public"."lembur" VALUES (72, 7, 2, 100000.00, '2025-01-11');
+INSERT INTO "public"."lembur" VALUES (73, 7, 5, 250000.00, '2025-01-11');
+INSERT INTO "public"."lembur" VALUES (74, 10, 2, 100000.00, '2025-01-11');
+INSERT INTO "public"."lembur" VALUES (75, 7, 5, 250000.00, '2025-01-11');
+INSERT INTO "public"."lembur" VALUES (76, 2, 5, 250000.00, '2025-01-11');
+INSERT INTO "public"."lembur" VALUES (77, 9, 5, 250000.00, '2025-01-11');
+INSERT INTO "public"."lembur" VALUES (78, 8, 5, 250000.00, '2025-01-11');
+INSERT INTO "public"."lembur" VALUES (79, 4, 3, 150000.00, '2025-01-11');
+INSERT INTO "public"."lembur" VALUES (80, 9, 2, 100000.00, '2025-01-12');
+INSERT INTO "public"."lembur" VALUES (81, 6, 1, 50000.00, '2025-01-12');
+INSERT INTO "public"."lembur" VALUES (82, 9, 1, 50000.00, '2025-01-12');
+INSERT INTO "public"."lembur" VALUES (83, 8, 1, 50000.00, '2025-01-12');
+INSERT INTO "public"."lembur" VALUES (84, 1, 2, 100000.00, '2025-01-12');
+INSERT INTO "public"."lembur" VALUES (85, 9, 4, 200000.00, '2025-01-12');
+INSERT INTO "public"."lembur" VALUES (86, 3, 5, 250000.00, '2025-01-13');
+INSERT INTO "public"."lembur" VALUES (87, 6, 4, 200000.00, '2025-01-13');
+INSERT INTO "public"."lembur" VALUES (88, 3, 4, 200000.00, '2025-01-13');
+INSERT INTO "public"."lembur" VALUES (89, 8, 2, 100000.00, '2025-01-13');
+INSERT INTO "public"."lembur" VALUES (90, 9, 4, 200000.00, '2025-01-13');
+INSERT INTO "public"."lembur" VALUES (91, 2, 2, 100000.00, '2025-01-13');
+INSERT INTO "public"."lembur" VALUES (92, 8, 3, 150000.00, '2025-01-13');
+INSERT INTO "public"."lembur" VALUES (93, 7, 5, 250000.00, '2025-01-14');
+INSERT INTO "public"."lembur" VALUES (94, 5, 2, 100000.00, '2025-01-14');
+INSERT INTO "public"."lembur" VALUES (95, 9, 2, 100000.00, '2025-01-14');
+INSERT INTO "public"."lembur" VALUES (96, 6, 2, 100000.00, '2025-01-14');
+INSERT INTO "public"."lembur" VALUES (97, 6, 5, 250000.00, '2025-01-15');
+INSERT INTO "public"."lembur" VALUES (98, 6, 2, 100000.00, '2025-01-15');
+INSERT INTO "public"."lembur" VALUES (99, 5, 4, 200000.00, '2025-01-15');
+INSERT INTO "public"."lembur" VALUES (100, 2, 1, 50000.00, '2025-01-15');
+INSERT INTO "public"."lembur" VALUES (101, 2, 2, 100000.00, '2025-01-15');
+INSERT INTO "public"."lembur" VALUES (102, 1, 3, 150000.00, '2025-01-16');
+INSERT INTO "public"."lembur" VALUES (103, 2, 1, 50000.00, '2025-01-16');
+INSERT INTO "public"."lembur" VALUES (104, 5, 5, 250000.00, '2025-01-16');
+INSERT INTO "public"."lembur" VALUES (105, 6, 1, 50000.00, '2025-01-16');
+INSERT INTO "public"."lembur" VALUES (106, 2, 1, 50000.00, '2025-01-16');
+INSERT INTO "public"."lembur" VALUES (107, 9, 2, 100000.00, '2025-01-16');
+INSERT INTO "public"."lembur" VALUES (108, 7, 3, 150000.00, '2025-01-16');
+INSERT INTO "public"."lembur" VALUES (109, 2, 2, 100000.00, '2025-01-16');
+INSERT INTO "public"."lembur" VALUES (110, 6, 2, 100000.00, '2025-01-16');
+INSERT INTO "public"."lembur" VALUES (111, 6, 5, 250000.00, '2025-01-17');
+INSERT INTO "public"."lembur" VALUES (112, 5, 5, 250000.00, '2025-01-17');
+INSERT INTO "public"."lembur" VALUES (113, 4, 1, 50000.00, '2025-01-17');
+INSERT INTO "public"."lembur" VALUES (114, 9, 2, 100000.00, '2025-01-17');
+INSERT INTO "public"."lembur" VALUES (115, 2, 5, 250000.00, '2025-01-17');
+INSERT INTO "public"."lembur" VALUES (116, 3, 4, 200000.00, '2025-01-17');
+INSERT INTO "public"."lembur" VALUES (117, 2, 1, 50000.00, '2025-01-18');
+INSERT INTO "public"."lembur" VALUES (118, 5, 2, 100000.00, '2025-01-18');
+INSERT INTO "public"."lembur" VALUES (119, 2, 4, 200000.00, '2025-01-18');
+INSERT INTO "public"."lembur" VALUES (120, 4, 5, 250000.00, '2025-01-18');
+INSERT INTO "public"."lembur" VALUES (121, 9, 2, 100000.00, '2025-01-18');
+INSERT INTO "public"."lembur" VALUES (122, 1, 2, 100000.00, '2025-01-18');
+INSERT INTO "public"."lembur" VALUES (123, 10, 5, 250000.00, '2025-01-19');
+INSERT INTO "public"."lembur" VALUES (124, 10, 4, 200000.00, '2025-01-19');
+INSERT INTO "public"."lembur" VALUES (125, 9, 4, 200000.00, '2025-01-19');
+INSERT INTO "public"."lembur" VALUES (126, 4, 1, 50000.00, '2025-01-20');
+INSERT INTO "public"."lembur" VALUES (127, 9, 5, 250000.00, '2025-01-20');
+INSERT INTO "public"."lembur" VALUES (128, 9, 1, 50000.00, '2025-01-20');
+INSERT INTO "public"."lembur" VALUES (129, 8, 1, 50000.00, '2025-01-20');
+INSERT INTO "public"."lembur" VALUES (130, 7, 2, 100000.00, '2025-01-20');
+INSERT INTO "public"."lembur" VALUES (131, 8, 3, 150000.00, '2025-01-20');
+INSERT INTO "public"."lembur" VALUES (132, 4, 2, 100000.00, '2025-01-21');
+INSERT INTO "public"."lembur" VALUES (133, 9, 3, 150000.00, '2025-01-21');
+INSERT INTO "public"."lembur" VALUES (134, 7, 4, 200000.00, '2025-01-21');
+INSERT INTO "public"."lembur" VALUES (135, 9, 1, 50000.00, '2025-01-21');
+INSERT INTO "public"."lembur" VALUES (136, 6, 2, 100000.00, '2025-01-21');
+INSERT INTO "public"."lembur" VALUES (137, 10, 3, 150000.00, '2025-01-21');
+INSERT INTO "public"."lembur" VALUES (138, 9, 2, 100000.00, '2025-01-21');
+INSERT INTO "public"."lembur" VALUES (139, 8, 3, 150000.00, '2025-01-22');
+INSERT INTO "public"."lembur" VALUES (140, 2, 2, 100000.00, '2025-01-22');
+INSERT INTO "public"."lembur" VALUES (141, 9, 4, 200000.00, '2025-01-22');
+INSERT INTO "public"."lembur" VALUES (142, 4, 3, 150000.00, '2025-01-22');
+INSERT INTO "public"."lembur" VALUES (143, 5, 2, 100000.00, '2025-01-22');
+INSERT INTO "public"."lembur" VALUES (144, 4, 5, 250000.00, '2025-01-22');
+INSERT INTO "public"."lembur" VALUES (145, 7, 3, 150000.00, '2025-01-22');
+INSERT INTO "public"."lembur" VALUES (146, 2, 1, 50000.00, '2025-01-22');
+INSERT INTO "public"."lembur" VALUES (147, 2, 4, 200000.00, '2025-01-23');
+INSERT INTO "public"."lembur" VALUES (148, 3, 1, 50000.00, '2025-01-23');
+INSERT INTO "public"."lembur" VALUES (149, 5, 5, 250000.00, '2025-01-23');
+INSERT INTO "public"."lembur" VALUES (150, 7, 5, 250000.00, '2025-01-23');
+INSERT INTO "public"."lembur" VALUES (151, 10, 4, 200000.00, '2025-01-23');
+INSERT INTO "public"."lembur" VALUES (152, 9, 4, 200000.00, '2025-01-23');
+INSERT INTO "public"."lembur" VALUES (153, 5, 3, 150000.00, '2025-01-23');
+INSERT INTO "public"."lembur" VALUES (154, 2, 1, 50000.00, '2025-01-24');
+INSERT INTO "public"."lembur" VALUES (155, 5, 3, 150000.00, '2025-01-24');
+INSERT INTO "public"."lembur" VALUES (156, 5, 1, 50000.00, '2025-01-24');
+INSERT INTO "public"."lembur" VALUES (157, 6, 5, 250000.00, '2025-01-24');
+INSERT INTO "public"."lembur" VALUES (158, 8, 5, 250000.00, '2025-01-24');
+INSERT INTO "public"."lembur" VALUES (159, 10, 2, 100000.00, '2025-01-24');
+INSERT INTO "public"."lembur" VALUES (160, 6, 5, 250000.00, '2025-01-24');
+INSERT INTO "public"."lembur" VALUES (161, 4, 5, 250000.00, '2025-01-25');
+INSERT INTO "public"."lembur" VALUES (162, 2, 2, 100000.00, '2025-01-25');
+INSERT INTO "public"."lembur" VALUES (163, 10, 5, 250000.00, '2025-01-25');
+INSERT INTO "public"."lembur" VALUES (164, 1, 1, 50000.00, '2025-01-25');
+INSERT INTO "public"."lembur" VALUES (165, 3, 3, 150000.00, '2025-01-26');
+INSERT INTO "public"."lembur" VALUES (166, 10, 3, 150000.00, '2025-01-26');
+INSERT INTO "public"."lembur" VALUES (167, 2, 3, 150000.00, '2025-01-26');
+INSERT INTO "public"."lembur" VALUES (168, 7, 3, 150000.00, '2025-01-27');
+INSERT INTO "public"."lembur" VALUES (169, 10, 5, 250000.00, '2025-01-27');
+INSERT INTO "public"."lembur" VALUES (170, 5, 1, 50000.00, '2025-01-27');
+INSERT INTO "public"."lembur" VALUES (171, 9, 2, 100000.00, '2025-01-27');
+INSERT INTO "public"."lembur" VALUES (172, 4, 5, 250000.00, '2025-01-27');
+INSERT INTO "public"."lembur" VALUES (173, 5, 1, 50000.00, '2025-01-27');
+INSERT INTO "public"."lembur" VALUES (174, 9, 5, 250000.00, '2025-01-27');
+INSERT INTO "public"."lembur" VALUES (175, 10, 5, 250000.00, '2025-01-27');
+INSERT INTO "public"."lembur" VALUES (176, 1, 3, 150000.00, '2025-01-27');
+INSERT INTO "public"."lembur" VALUES (177, 10, 5, 250000.00, '2025-01-27');
+INSERT INTO "public"."lembur" VALUES (178, 8, 4, 200000.00, '2025-01-28');
+INSERT INTO "public"."lembur" VALUES (179, 9, 4, 200000.00, '2025-01-28');
+INSERT INTO "public"."lembur" VALUES (180, 8, 1, 50000.00, '2025-01-28');
+INSERT INTO "public"."lembur" VALUES (181, 9, 3, 150000.00, '2025-01-28');
+INSERT INTO "public"."lembur" VALUES (182, 9, 4, 200000.00, '2025-01-28');
+INSERT INTO "public"."lembur" VALUES (183, 4, 4, 200000.00, '2025-01-28');
+INSERT INTO "public"."lembur" VALUES (184, 6, 3, 150000.00, '2025-01-28');
+INSERT INTO "public"."lembur" VALUES (185, 10, 1, 50000.00, '2025-01-28');
+INSERT INTO "public"."lembur" VALUES (186, 8, 5, 250000.00, '2025-01-28');
+INSERT INTO "public"."lembur" VALUES (187, 2, 3, 150000.00, '2025-01-29');
+INSERT INTO "public"."lembur" VALUES (188, 8, 3, 150000.00, '2025-01-29');
+INSERT INTO "public"."lembur" VALUES (189, 1, 2, 100000.00, '2025-01-29');
+INSERT INTO "public"."lembur" VALUES (190, 10, 4, 200000.00, '2025-01-29');
+INSERT INTO "public"."lembur" VALUES (191, 8, 5, 250000.00, '2025-01-29');
+INSERT INTO "public"."lembur" VALUES (192, 5, 5, 250000.00, '2025-01-29');
+INSERT INTO "public"."lembur" VALUES (193, 2, 5, 250000.00, '2025-01-29');
+INSERT INTO "public"."lembur" VALUES (194, 5, 5, 250000.00, '2025-01-30');
+INSERT INTO "public"."lembur" VALUES (195, 3, 1, 50000.00, '2025-01-30');
+INSERT INTO "public"."lembur" VALUES (196, 4, 2, 100000.00, '2025-01-30');
+INSERT INTO "public"."lembur" VALUES (197, 5, 5, 250000.00, '2025-01-30');
+INSERT INTO "public"."lembur" VALUES (198, 4, 1, 50000.00, '2025-01-30');
+INSERT INTO "public"."lembur" VALUES (199, 1, 3, 150000.00, '2025-01-31');
+INSERT INTO "public"."lembur" VALUES (200, 4, 1, 50000.00, '2025-01-31');
+
+-- ----------------------------
+-- Primary Key structure for table lembur
+-- ----------------------------
+ALTER TABLE "public"."lembur" ADD CONSTRAINT "lembur_pkey" PRIMARY KEY ("id_lembur");
+
+-- ----------------------------
+-- Foreign Keys structure for table lembur
+-- ----------------------------
+ALTER TABLE "public"."lembur" ADD CONSTRAINT "lembur_id_karyawan_fkey" FOREIGN KEY ("id_karyawan") REFERENCES "public"."karyawan" ("id_karyawan") ON DELETE NO ACTION ON UPDATE NO ACTION;

@@ -1,0 +1,131 @@
+-- ----------------------------
+-- Table structure for karyawan
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."karyawan";
+CREATE TABLE "public"."karyawan" (
+  "id_karyawan" int4 NOT NULL,
+  "nama_depan" varchar(50) COLLATE "pg_catalog"."default",
+  "nama_belakang" varchar(50) COLLATE "pg_catalog"."default",
+  "status" varchar(20) COLLATE "pg_catalog"."default",
+  "alamat" varchar(150) COLLATE "pg_catalog"."default",
+  "kota" varchar(100) COLLATE "pg_catalog"."default",
+  "kode_pos" varchar(10) COLLATE "pg_catalog"."default",
+  "id_jabatan" int4,
+  "kode_ptkp" varchar(5) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
+-- Records of karyawan
+-- ----------------------------
+INSERT INTO "public"."karyawan" VALUES (1, 'Ira', 'Aurora Hartati', 'aktif', 'Gg. Raden No. 385', 'Denpasar', '36616', 12, 'KI2');
+INSERT INTO "public"."karyawan" VALUES (2, 'Dipa', 'Reksa Siregar', 'aktif', 'Ki. Baladewa No. 606', 'Pangkal Pinang', '52740', 15, 'TK3');
+INSERT INTO "public"."karyawan" VALUES (3, 'Tasnim', 'Kusumo', 'aktif', 'Gg. Bayam No. 574', 'Payakumbuh', '13565', 8, 'K3');
+INSERT INTO "public"."karyawan" VALUES (4, 'Kawaca', 'Januar', 'aktif', 'Psr. Surapati No. 548', 'Tebing Tinggi', '47619', 1, 'K3');
+INSERT INTO "public"."karyawan" VALUES (5, 'Fathonah', 'Winarsih', 'aktif', 'Psr. Baranang Siang No. 315', 'Pematangsiantar', '17366', 2, 'KI0');
+INSERT INTO "public"."karyawan" VALUES (6, 'Hamima', 'Icha Wahyuni', 'aktif', 'Gg. Honggowongso No. 896', 'Palopo', '22889', 4, 'K0');
+INSERT INTO "public"."karyawan" VALUES (7, 'Jaga', 'Irawan', 'aktif', 'Dk. Sukabumi No. 831', 'Tegal', '75206', 16, 'KI3');
+INSERT INTO "public"."karyawan" VALUES (8, 'Azalea', 'Farida', 'aktif', 'Jln. Karel S. Tubun No. 289', 'Tegal', '92705', 2, 'TK0');
+INSERT INTO "public"."karyawan" VALUES (9, 'Bagya', 'Kurniawan', 'aktif', 'Psr. Jayawijaya No. 87', 'Batu', '83382', 3, 'K2');
+INSERT INTO "public"."karyawan" VALUES (10, 'Diana', 'Lestari', 'aktif', 'Ki. B.Agam Dlm No. 342', 'Langsa', '77985', 8, 'TK1');
+INSERT INTO "public"."karyawan" VALUES (11, 'Ikin', 'Wardaya Suryono', 'aktif', 'Ki. Raya Setiabudhi No. 86', 'Pagar Alam', '18790', 9, 'TK1');
+INSERT INTO "public"."karyawan" VALUES (12, 'Tina', 'Safina Nurdiyanti', 'aktif', 'Gg. Bacang No. 84', 'Gunungsitoli', '92450', 8, 'KI2');
+INSERT INTO "public"."karyawan" VALUES (13, 'Gambira', 'Adriansyah', 'aktif', 'Psr. Soekarno Hatta No. 296', 'Tomohon', '16381', 5, 'KI0');
+INSERT INTO "public"."karyawan" VALUES (14, 'Soleh', 'Uwais', 'aktif', 'Dk. Peta No. 723', 'Yogyakarta', '51639', 18, 'K3');
+INSERT INTO "public"."karyawan" VALUES (15, 'Bakianto', 'Mahendra', 'aktif', 'Gg. Kusmanto No. 987', 'Surakarta', '60555', 17, 'K0');
+INSERT INTO "public"."karyawan" VALUES (16, 'Pia', 'Winarsih', 'aktif', 'Kpg. Katamso No. 685', 'Administrasi Jakarta Utara', '86387', 14, 'K3');
+INSERT INTO "public"."karyawan" VALUES (17, 'Indra', 'Mandala', 'aktif', 'Ds. Sudirman No. 891', 'Sibolga', '22053', 11, 'TK2');
+INSERT INTO "public"."karyawan" VALUES (18, 'Ellis', 'Wahyuni', 'aktif', 'Psr. Perintis Kemerdekaan No. 630', 'Semarang', '34291', 18, 'KI3');
+INSERT INTO "public"."karyawan" VALUES (19, 'Tania', 'Hassanah', 'aktif', 'Gg. Perintis Kemerdekaan No. 943', 'Madiun', '57316', 14, 'KI1');
+INSERT INTO "public"."karyawan" VALUES (20, 'Natalia', 'Novitasari', 'aktif', 'Dk. Abdul Rahmat No. 599', 'Banjar', '55504', 7, 'K2');
+INSERT INTO "public"."karyawan" VALUES (21, 'Puput', 'Ira Puspita', 'aktif', 'Kpg. Rajiman No. 889', 'Palembang', '17227', 3, 'K1');
+INSERT INTO "public"."karyawan" VALUES (22, 'Dalimin', 'Adriansyah', 'aktif', 'Jln. Yohanes No. 234', 'Tanjung Pinang', '50049', 12, 'KI0');
+INSERT INTO "public"."karyawan" VALUES (23, 'Laras', 'Usamah', 'aktif', 'Ds. Bacang No. 494', 'Bengkulu', '15570', 8, 'K0');
+INSERT INTO "public"."karyawan" VALUES (24, 'Tina', 'Mandasari', 'aktif', 'Dk. Kebonjati No. 880', 'Jambi', '46210', 4, 'TK3');
+INSERT INTO "public"."karyawan" VALUES (25, 'Elma', 'Maryati', 'aktif', 'Jln. Basudewo No. 480', 'Lubuklinggau', '38645', 4, 'TK1');
+INSERT INTO "public"."karyawan" VALUES (26, 'Hesti', 'Agustina', 'aktif', 'Kpg. Dipenogoro No. 582', 'Payakumbuh', '83494', 18, 'KI2');
+INSERT INTO "public"."karyawan" VALUES (27, 'Salimah', 'Kamila Hastuti', 'aktif', 'Jln. Ters. Buah Batu No. 804', 'Bogor', '37711', 11, 'K3');
+INSERT INTO "public"."karyawan" VALUES (28, 'Cemani', 'Winarno', 'aktif', 'Gg. Bahagia No. 961', 'Langsa', '90789', 14, 'K1');
+INSERT INTO "public"."karyawan" VALUES (29, 'Lega', 'Wasita', 'aktif', 'Ki. Gotong Royong No. 525', 'Kupang', '25284', 8, 'K0');
+INSERT INTO "public"."karyawan" VALUES (30, 'Maida', 'Novitasari', 'aktif', 'Gg. Baja No. 65', 'Palangka Raya', '36840', 7, 'KI3');
+INSERT INTO "public"."karyawan" VALUES (31, 'Galiono', 'Hidayat', 'aktif', 'Psr. Baik No. 297', 'Lubuklinggau', '75531', 10, 'K0');
+INSERT INTO "public"."karyawan" VALUES (32, 'Ida', 'Purnawati', 'aktif', 'Jln. Rajawali Timur No. 228', 'Palembang', '51232', 4, 'KI3');
+INSERT INTO "public"."karyawan" VALUES (33, 'Timbul', 'Zulkarnain', 'aktif', 'Psr. Gremet No. 788', 'Bekasi', '20511', 16, 'KI0');
+INSERT INTO "public"."karyawan" VALUES (34, 'Najwa', 'Uyainah', 'aktif', 'Jln. Perintis Kemerdekaan No. 512', 'Kendari', '97926', 17, 'KI1');
+INSERT INTO "public"."karyawan" VALUES (35, 'Harsana', 'Kajen Pangestu', 'aktif', 'Kpg. Samanhudi No. 613', 'Pekanbaru', '14497', 18, 'TK0');
+INSERT INTO "public"."karyawan" VALUES (36, 'Qori', 'Lestari', 'aktif', 'Psr. Jend. A. Yani No. 784', 'Batu', '55872', 19, 'K2');
+INSERT INTO "public"."karyawan" VALUES (37, 'Wahyu', 'Cawisadi Wibowo', 'aktif', 'Gg. Imam Bonjol No. 837', 'Pontianak', '90958', 14, 'TK3');
+INSERT INTO "public"."karyawan" VALUES (38, 'Yance', 'Suartini', 'aktif', 'Ki. Labu No. 622', 'Surakarta', '65637', 16, 'K3');
+INSERT INTO "public"."karyawan" VALUES (39, 'Vivi', 'Utami', 'aktif', 'Kpg. Sampangan No. 495', 'Sorong', '81065', 8, 'TK2');
+INSERT INTO "public"."karyawan" VALUES (40, 'Halima', 'Zulaika', 'aktif', 'Jr. Barasak No. 637', 'Lubuklinggau', '47925', 13, 'TK2');
+INSERT INTO "public"."karyawan" VALUES (41, 'Cinthia', 'Yunita Winarsih', 'aktif', 'Psr. Wahidin Sudirohusodo No. 395', 'Bekasi', '32351', 15, 'K1');
+INSERT INTO "public"."karyawan" VALUES (42, 'Karma', 'Latupono', 'aktif', 'Jln. Daan No. 545', 'Tangerang Selatan', '63081', 18, 'KI1');
+INSERT INTO "public"."karyawan" VALUES (43, 'Johan', 'Gunarto', 'aktif', 'Kpg. Otto No. 352', 'Medan', '24614', 15, 'KI0');
+INSERT INTO "public"."karyawan" VALUES (44, 'Juli', 'Zalindra Melani', 'aktif', 'Kpg. Cut Nyak Dien No. 362', 'Lubuklinggau', '20663', 12, 'K3');
+INSERT INTO "public"."karyawan" VALUES (45, 'Jamalia', 'Lestari', 'aktif', 'Gg. Daan No. 993', 'Administrasi Jakarta Pusat', '80867', 3, 'K0');
+INSERT INTO "public"."karyawan" VALUES (46, 'Prabu', 'Prabawa Wibowo', 'aktif', 'Jr. Rajawali Timur No. 509', 'Gorontalo', '19857', 6, 'KI2');
+INSERT INTO "public"."karyawan" VALUES (47, 'Ina', 'Hartati', 'aktif', 'Gg. Halim No. 837', 'Banjar', '16683', 8, 'K3');
+INSERT INTO "public"."karyawan" VALUES (48, 'Malika', 'Jamalia Laksita', 'aktif', 'Jr. Halim No. 264', 'Administrasi Jakarta Barat', '77577', 9, 'TK2');
+INSERT INTO "public"."karyawan" VALUES (49, 'Zamira', 'Sadina Melani', 'aktif', 'Dk. Rumah Sakit No. 739', 'Sawahlunto', '86561', 14, 'KI1');
+INSERT INTO "public"."karyawan" VALUES (50, 'Mujur', 'Saputra', 'aktif', 'Jln. Gegerkalong Hilir No. 752', 'Ambon', '60388', 17, 'K1');
+INSERT INTO "public"."karyawan" VALUES (51, 'Surya', 'Suryono', 'aktif', 'Ki. Yosodipuro No. 827', 'Subulussalam', '35411', 5, 'KI3');
+INSERT INTO "public"."karyawan" VALUES (52, 'Candra', 'Ramadan', 'aktif', 'Gg. Honggowongso No. 526', 'Blitar', '84286', 3, 'KI2');
+INSERT INTO "public"."karyawan" VALUES (53, 'Elma', 'Maryati', 'aktif', 'Kpg. Gedebage Selatan No. 608', 'Surakarta', '35585', 7, 'TK1');
+INSERT INTO "public"."karyawan" VALUES (54, 'Wira', 'Pratama', 'aktif', 'Jln. S. Parman No. 900', 'Tangerang', '55064', 7, 'TK0');
+INSERT INTO "public"."karyawan" VALUES (55, 'Emin', 'Harimurti Prayoga', 'aktif', 'Dk. Basuki No. 312', 'Malang', '57247', 10, 'KI2');
+INSERT INTO "public"."karyawan" VALUES (56, 'Maryadi', 'Sitorus', 'aktif', 'Jln. Sutan Syahrir No. 144', 'Palopo', '18136', 11, 'KI2');
+INSERT INTO "public"."karyawan" VALUES (57, 'Tugiman', 'Kusumo', 'aktif', 'Psr. Nakula No. 99', 'Dumai', '76082', 4, 'K1');
+INSERT INTO "public"."karyawan" VALUES (58, 'Dalima', 'Wastuti', 'aktif', 'Dk. Moch. Ramdan No. 881', 'Metro', '43421', 3, 'K0');
+INSERT INTO "public"."karyawan" VALUES (59, 'Bagas', 'Prabowo', 'aktif', 'Ds. Bakau No. 552', 'Denpasar', '94012', 7, 'TK2');
+INSERT INTO "public"."karyawan" VALUES (60, 'Diana', 'Yuliarti', 'aktif', 'Jln. Cikapayang No. 80', 'Kediri', '33890', 18, 'KI3');
+INSERT INTO "public"."karyawan" VALUES (61, 'Carla', 'Wijayanti', 'aktif', 'Kpg. Bakaru No. 59', 'Tangerang', '65511', 15, 'TK3');
+INSERT INTO "public"."karyawan" VALUES (62, 'Fitria', 'Permata', 'aktif', 'Psr. Basoka Raya No. 899', 'Bogor', '61898', 6, 'K2');
+INSERT INTO "public"."karyawan" VALUES (63, 'Tina', 'Permata', 'aktif', 'Ds. PHH. Mustofa No. 138', 'Surakarta', '67903', 5, 'K2');
+INSERT INTO "public"."karyawan" VALUES (64, 'Chelsea', 'Handayani', 'aktif', 'Gg. Hasanuddin No. 857', 'Malang', '16121', 11, 'TK0');
+INSERT INTO "public"."karyawan" VALUES (65, 'Aditya', 'Haryanto', 'aktif', 'Psr. Moch. Ramdan No. 44', 'Administrasi Jakarta Barat', '53195', 16, 'TK0');
+INSERT INTO "public"."karyawan" VALUES (66, 'Ida', 'Mardhiyah', 'aktif', 'Ki. Diponegoro No. 616', 'Kediri', '14468', 13, 'TK0');
+INSERT INTO "public"."karyawan" VALUES (67, 'Oni', 'Pudjiastuti', 'aktif', 'Kpg. Pattimura No. 489', 'Madiun', '11050', 4, 'K2');
+INSERT INTO "public"."karyawan" VALUES (68, 'Luhung', 'Samosir', 'aktif', 'Kpg. Bappenas No. 5', 'Administrasi Jakarta Timur', '64251', 11, 'TK1');
+INSERT INTO "public"."karyawan" VALUES (69, 'Sabar', 'Adhiarja Latupono', 'aktif', 'Ki. R.M. Said No. 366', 'Banjar', '99628', 12, 'KI2');
+INSERT INTO "public"."karyawan" VALUES (70, 'Bella', 'Mandasari', 'aktif', 'Psr. Mulyadi No. 817', 'Bengkulu', '10683', 10, 'K3');
+INSERT INTO "public"."karyawan" VALUES (71, 'Kemba', 'Mangunsong', 'aktif', 'Psr. Sudirman No. 412', 'Kendari', '24911', 19, 'TK0');
+INSERT INTO "public"."karyawan" VALUES (72, 'Ikin', 'Pratama', 'aktif', 'Dk. Baranang No. 56', 'Tidore Kepulauan', '41429', 12, 'K1');
+INSERT INTO "public"."karyawan" VALUES (73, 'Elma', 'Febi Namaga', 'aktif', 'Ds. Barat No. 923', 'Padangpanjang', '44934', 19, 'KI1');
+INSERT INTO "public"."karyawan" VALUES (74, 'Lanjar', 'Permadi', 'aktif', 'Psr. Tambun No. 220', 'Langsa', '92536', 11, 'TK1');
+INSERT INTO "public"."karyawan" VALUES (75, 'Dacin', 'Budiman', 'aktif', 'Ds. Bata Putih No. 439', 'Medan', '92207', 19, 'TK0');
+INSERT INTO "public"."karyawan" VALUES (76, 'Padmi', 'Mayasari', 'aktif', 'Jln. K.H. Maskur No. 301', 'Pontianak', '27576', 15, 'KI0');
+INSERT INTO "public"."karyawan" VALUES (77, 'Intan', 'Purwanti', 'aktif', 'Ki. Bagonwoto  No. 641', 'Makassar', '18907', 18, 'K0');
+INSERT INTO "public"."karyawan" VALUES (78, 'Malik', 'Waluyo', 'aktif', 'Gg. Radio No. 323', 'Tasikmalaya', '13398', 11, 'TK2');
+INSERT INTO "public"."karyawan" VALUES (79, 'Gatot', 'Prabowo', 'aktif', 'Psr. Cihampelas No. 811', 'Malang', '17457', 12, 'K1');
+INSERT INTO "public"."karyawan" VALUES (80, 'Ganjaran', 'Narpati', 'aktif', 'Jr. R.M. Said No. 650', 'Padangsidempuan', '91877', 14, 'TK3');
+INSERT INTO "public"."karyawan" VALUES (81, 'Maryadi', 'Ardianto', 'aktif', 'Ki. Tubagus Ismail No. 718', 'Padang', '13832', 19, 'TK0');
+INSERT INTO "public"."karyawan" VALUES (82, 'Galiono', 'Megantara', 'aktif', 'Psr. Sudirman No. 802', 'Jambi', '87414', 15, 'KI1');
+INSERT INTO "public"."karyawan" VALUES (83, 'Yessi', 'Susanti', 'aktif', 'Kpg. Lembong No. 657', 'Jambi', '74015', 7, 'K2');
+INSERT INTO "public"."karyawan" VALUES (84, 'Lili', 'Mulyani', 'aktif', 'Kpg. Mahakam No. 992', 'Gunungsitoli', '91451', 6, 'KI3');
+INSERT INTO "public"."karyawan" VALUES (85, 'Maria', 'Susanti', 'aktif', 'Psr. Karel S. Tubun No. 67', 'Palembang', '93853', 8, 'K1');
+INSERT INTO "public"."karyawan" VALUES (86, 'Gambira', 'Utama', 'aktif', 'Kpg. Wahid No. 347', 'Metro', '32618', 7, 'K0');
+INSERT INTO "public"."karyawan" VALUES (87, 'Jane', 'Utami', 'aktif', 'Psr. Ekonomi No. 810', 'Banjar', '59346', 12, 'TK3');
+INSERT INTO "public"."karyawan" VALUES (88, 'Satya', 'Firmansyah', 'aktif', 'Dk. Asia Afrika No. 839', 'Makassar', '62646', 10, 'KI3');
+INSERT INTO "public"."karyawan" VALUES (89, 'Febi', 'Rahayu', 'aktif', 'Ki. Asia Afrika No. 578', 'Padangsidempuan', '78180', 4, 'TK1');
+INSERT INTO "public"."karyawan" VALUES (90, 'Mujur', 'Daryani Pranowo', 'aktif', 'Psr. Pasteur No. 956', 'Binjai', '15222', 6, 'KI2');
+INSERT INTO "public"."karyawan" VALUES (91, 'Putri', 'Yuniar', 'aktif', 'Ds. Pasteur No. 706', 'Palembang', '93946', 7, 'KI0');
+INSERT INTO "public"."karyawan" VALUES (92, 'Tugiman', 'Manullang', 'aktif', 'Ki. Bazuka Raya No. 202', 'Metro', '52583', 4, 'K1');
+INSERT INTO "public"."karyawan" VALUES (93, 'Yani', 'Yolanda', 'aktif', 'Jln. Suniaraja No. 693', 'Administrasi Jakarta Utara', '84015', 9, 'K1');
+INSERT INTO "public"."karyawan" VALUES (94, 'Rama', 'Hakim', 'aktif', 'Ki. Untung Suropati No. 4', 'Palangka Raya', '79891', 8, 'K1');
+INSERT INTO "public"."karyawan" VALUES (95, 'Erik', 'Raden Mansur', 'aktif', 'Ki. Baik No. 837', 'Tangerang Selatan', '14121', 13, 'K2');
+INSERT INTO "public"."karyawan" VALUES (96, 'Harjaya', 'Hakim', 'aktif', 'Ds. Warga No. 670', 'Administrasi Jakarta Pusat', '75366', 5, 'TK1');
+INSERT INTO "public"."karyawan" VALUES (97, 'Carla', 'Maryati', 'aktif', 'Jr. Basmol Raya No. 354', 'Metro', '94891', 4, 'KI1');
+INSERT INTO "public"."karyawan" VALUES (98, 'Pia', 'Winarsih', 'aktif', 'Jln. W.R. Supratman No. 751', 'Bitung', '55676', 8, 'TK0');
+INSERT INTO "public"."karyawan" VALUES (99, 'Eman', 'Permadi', 'aktif', 'Psr. Baha No. 46', 'Kendari', '65549', 17, 'K3');
+INSERT INTO "public"."karyawan" VALUES (100, 'Padma', 'Pertiwi', 'aktif', 'Jln. Bakin No. 307', 'Pontianak', '85627', 19, 'TK0');
+
+-- ----------------------------
+-- Primary Key structure for table karyawan
+-- ----------------------------
+ALTER TABLE "public"."karyawan" ADD CONSTRAINT "karyawan_pkey" PRIMARY KEY ("id_karyawan");
+
+-- ----------------------------
+-- Foreign Keys structure for table karyawan
+-- ----------------------------
+ALTER TABLE "public"."karyawan" ADD CONSTRAINT "karyawan_id_jabatan_fkey" FOREIGN KEY ("id_jabatan") REFERENCES "public"."jabatan" ("id_jabatan") ON DELETE NO ACTION ON UPDATE NO ACTION;
+ALTER TABLE "public"."karyawan" ADD CONSTRAINT "karyawan_kode_ptkp_fkey" FOREIGN KEY ("kode_ptkp") REFERENCES "public"."ref_ptkp" ("kode_ptkp") ON DELETE NO ACTION ON UPDATE NO ACTION;

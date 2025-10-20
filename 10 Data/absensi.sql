@@ -1,0 +1,225 @@
+-- ----------------------------
+-- Table structure for absensi
+-- ----------------------------
+DROP TABLE IF EXISTS "public"."absensi";
+CREATE TABLE "public"."absensi" (
+  "id_absensi" int4 NOT NULL,
+  "id_karyawan" int4,
+  "tanggal" date,
+  "status_absensi" varchar(10) COLLATE "pg_catalog"."default"
+)
+;
+
+-- ----------------------------
+-- Records of absensi
+-- ----------------------------
+INSERT INTO "public"."absensi" VALUES (1, 8, '2025-01-01', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (2, 7, '2025-01-01', 'Izin');
+INSERT INTO "public"."absensi" VALUES (3, 10, '2025-01-01', 'Izin');
+INSERT INTO "public"."absensi" VALUES (4, 4, '2025-01-01', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (5, 7, '2025-01-01', 'Izin');
+INSERT INTO "public"."absensi" VALUES (6, 7, '2025-01-01', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (7, 9, '2025-01-02', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (8, 6, '2025-01-02', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (9, 4, '2025-01-02', 'Izin');
+INSERT INTO "public"."absensi" VALUES (10, 5, '2025-01-02', 'Izin');
+INSERT INTO "public"."absensi" VALUES (11, 2, '2025-01-02', 'Izin');
+INSERT INTO "public"."absensi" VALUES (12, 5, '2025-01-02', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (13, 7, '2025-01-02', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (14, 8, '2025-01-03', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (15, 5, '2025-01-03', 'Izin');
+INSERT INTO "public"."absensi" VALUES (16, 3, '2025-01-04', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (17, 8, '2025-01-04', 'Izin');
+INSERT INTO "public"."absensi" VALUES (18, 6, '2025-01-04', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (19, 7, '2025-01-04', 'Izin');
+INSERT INTO "public"."absensi" VALUES (20, 6, '2025-01-04', 'Izin');
+INSERT INTO "public"."absensi" VALUES (21, 1, '2025-01-04', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (22, 6, '2025-01-05', 'Izin');
+INSERT INTO "public"."absensi" VALUES (23, 10, '2025-01-05', 'Izin');
+INSERT INTO "public"."absensi" VALUES (24, 4, '2025-01-05', 'Izin');
+INSERT INTO "public"."absensi" VALUES (25, 10, '2025-01-06', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (26, 8, '2025-01-06', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (27, 1, '2025-01-06', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (28, 6, '2025-01-06', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (29, 4, '2025-01-06', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (30, 1, '2025-01-06', 'Izin');
+INSERT INTO "public"."absensi" VALUES (31, 10, '2025-01-07', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (32, 1, '2025-01-07', 'Izin');
+INSERT INTO "public"."absensi" VALUES (33, 8, '2025-01-07', 'Izin');
+INSERT INTO "public"."absensi" VALUES (34, 2, '2025-01-08', 'Izin');
+INSERT INTO "public"."absensi" VALUES (35, 4, '2025-01-08', 'Izin');
+INSERT INTO "public"."absensi" VALUES (36, 4, '2025-01-08', 'Izin');
+INSERT INTO "public"."absensi" VALUES (37, 4, '2025-01-08', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (38, 7, '2025-01-08', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (39, 3, '2025-01-09', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (40, 3, '2025-01-09', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (41, 3, '2025-01-09', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (42, 5, '2025-01-09', 'Izin');
+INSERT INTO "public"."absensi" VALUES (43, 7, '2025-01-09', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (44, 6, '2025-01-09', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (45, 6, '2025-01-09', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (46, 9, '2025-01-09', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (47, 8, '2025-01-10', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (48, 3, '2025-01-10', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (49, 9, '2025-01-10', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (50, 3, '2025-01-10', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (51, 1, '2025-01-10', 'Izin');
+INSERT INTO "public"."absensi" VALUES (52, 3, '2025-01-10', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (53, 2, '2025-01-10', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (54, 5, '2025-01-10', 'Izin');
+INSERT INTO "public"."absensi" VALUES (55, 3, '2025-01-10', 'Izin');
+INSERT INTO "public"."absensi" VALUES (56, 6, '2025-01-10', 'Izin');
+INSERT INTO "public"."absensi" VALUES (57, 6, '2025-01-11', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (58, 8, '2025-01-11', 'Izin');
+INSERT INTO "public"."absensi" VALUES (59, 6, '2025-01-11', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (60, 6, '2025-01-11', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (61, 3, '2025-01-11', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (62, 6, '2025-01-12', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (63, 9, '2025-01-12', 'Izin');
+INSERT INTO "public"."absensi" VALUES (64, 7, '2025-01-12', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (65, 8, '2025-01-12', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (66, 7, '2025-01-13', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (67, 9, '2025-01-13', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (68, 3, '2025-01-13', 'Izin');
+INSERT INTO "public"."absensi" VALUES (69, 4, '2025-01-14', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (70, 1, '2025-01-14', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (71, 10, '2025-01-14', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (72, 6, '2025-01-14', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (73, 6, '2025-01-14', 'Izin');
+INSERT INTO "public"."absensi" VALUES (74, 9, '2025-01-14', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (75, 8, '2025-01-14', 'Izin');
+INSERT INTO "public"."absensi" VALUES (76, 7, '2025-01-14', 'Izin');
+INSERT INTO "public"."absensi" VALUES (77, 7, '2025-01-14', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (78, 8, '2025-01-14', 'Izin');
+INSERT INTO "public"."absensi" VALUES (79, 7, '2025-01-15', 'Izin');
+INSERT INTO "public"."absensi" VALUES (80, 4, '2025-01-15', 'Izin');
+INSERT INTO "public"."absensi" VALUES (81, 5, '2025-01-15', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (82, 1, '2025-01-15', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (83, 8, '2025-01-15', 'Izin');
+INSERT INTO "public"."absensi" VALUES (84, 1, '2025-01-15', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (85, 9, '2025-01-15', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (86, 9, '2025-01-15', 'Izin');
+INSERT INTO "public"."absensi" VALUES (87, 1, '2025-01-15', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (88, 2, '2025-01-16', 'Izin');
+INSERT INTO "public"."absensi" VALUES (89, 8, '2025-01-16', 'Izin');
+INSERT INTO "public"."absensi" VALUES (90, 9, '2025-01-16', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (91, 9, '2025-01-16', 'Izin');
+INSERT INTO "public"."absensi" VALUES (92, 6, '2025-01-16', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (93, 10, '2025-01-16', 'Izin');
+INSERT INTO "public"."absensi" VALUES (94, 4, '2025-01-17', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (95, 6, '2025-01-17', 'Izin');
+INSERT INTO "public"."absensi" VALUES (96, 1, '2025-01-17', 'Izin');
+INSERT INTO "public"."absensi" VALUES (97, 6, '2025-01-17', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (98, 5, '2025-01-17', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (99, 1, '2025-01-17', 'Izin');
+INSERT INTO "public"."absensi" VALUES (100, 5, '2025-01-17', 'Izin');
+INSERT INTO "public"."absensi" VALUES (101, 3, '2025-01-17', 'Izin');
+INSERT INTO "public"."absensi" VALUES (102, 9, '2025-01-17', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (103, 6, '2025-01-18', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (104, 4, '2025-01-18', 'Izin');
+INSERT INTO "public"."absensi" VALUES (105, 9, '2025-01-19', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (106, 10, '2025-01-19', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (107, 10, '2025-01-19', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (108, 9, '2025-01-19', 'Izin');
+INSERT INTO "public"."absensi" VALUES (109, 9, '2025-01-19', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (110, 6, '2025-01-19', 'Izin');
+INSERT INTO "public"."absensi" VALUES (111, 8, '2025-01-19', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (112, 10, '2025-01-20', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (113, 4, '2025-01-20', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (114, 7, '2025-01-20', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (115, 10, '2025-01-20', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (116, 1, '2025-01-21', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (117, 3, '2025-01-21', 'Izin');
+INSERT INTO "public"."absensi" VALUES (118, 8, '2025-01-21', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (119, 10, '2025-01-21', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (120, 10, '2025-01-21', 'Izin');
+INSERT INTO "public"."absensi" VALUES (121, 10, '2025-01-22', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (122, 9, '2025-01-22', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (123, 8, '2025-01-22', 'Izin');
+INSERT INTO "public"."absensi" VALUES (124, 5, '2025-01-22', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (125, 8, '2025-01-22', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (126, 7, '2025-01-22', 'Izin');
+INSERT INTO "public"."absensi" VALUES (127, 4, '2025-01-22', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (128, 9, '2025-01-22', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (129, 10, '2025-01-23', 'Izin');
+INSERT INTO "public"."absensi" VALUES (130, 5, '2025-01-23', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (131, 3, '2025-01-23', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (132, 8, '2025-01-23', 'Izin');
+INSERT INTO "public"."absensi" VALUES (133, 7, '2025-01-23', 'Izin');
+INSERT INTO "public"."absensi" VALUES (134, 1, '2025-01-23', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (135, 9, '2025-01-23', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (136, 10, '2025-01-23', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (137, 9, '2025-01-24', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (138, 8, '2025-01-24', 'Izin');
+INSERT INTO "public"."absensi" VALUES (139, 9, '2025-01-24', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (140, 7, '2025-01-24', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (141, 6, '2025-01-24', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (142, 6, '2025-01-24', 'Izin');
+INSERT INTO "public"."absensi" VALUES (143, 4, '2025-01-24', 'Izin');
+INSERT INTO "public"."absensi" VALUES (144, 1, '2025-01-24', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (145, 8, '2025-01-24', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (146, 4, '2025-01-24', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (147, 7, '2025-01-24', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (148, 5, '2025-01-24', 'Izin');
+INSERT INTO "public"."absensi" VALUES (149, 9, '2025-01-24', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (150, 1, '2025-01-24', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (151, 6, '2025-01-25', 'Izin');
+INSERT INTO "public"."absensi" VALUES (152, 2, '2025-01-25', 'Izin');
+INSERT INTO "public"."absensi" VALUES (153, 8, '2025-01-25', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (154, 7, '2025-01-25', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (155, 7, '2025-01-25', 'Izin');
+INSERT INTO "public"."absensi" VALUES (156, 2, '2025-01-25', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (157, 4, '2025-01-25', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (158, 4, '2025-01-25', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (159, 4, '2025-01-25', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (160, 1, '2025-01-25', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (161, 10, '2025-01-26', 'Izin');
+INSERT INTO "public"."absensi" VALUES (162, 2, '2025-01-26', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (163, 5, '2025-01-26', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (164, 4, '2025-01-26', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (165, 9, '2025-01-26', 'Izin');
+INSERT INTO "public"."absensi" VALUES (166, 9, '2025-01-26', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (167, 9, '2025-01-26', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (168, 8, '2025-01-26', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (169, 9, '2025-01-26', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (170, 7, '2025-01-26', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (171, 8, '2025-01-26', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (172, 8, '2025-01-27', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (173, 10, '2025-01-27', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (174, 4, '2025-01-27', 'Izin');
+INSERT INTO "public"."absensi" VALUES (175, 3, '2025-01-27', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (176, 3, '2025-01-27', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (177, 2, '2025-01-27', 'Izin');
+INSERT INTO "public"."absensi" VALUES (178, 3, '2025-01-27', 'Izin');
+INSERT INTO "public"."absensi" VALUES (179, 6, '2025-01-27', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (180, 8, '2025-01-27', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (181, 7, '2025-01-28', 'Izin');
+INSERT INTO "public"."absensi" VALUES (182, 6, '2025-01-28', 'Izin');
+INSERT INTO "public"."absensi" VALUES (183, 6, '2025-01-29', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (184, 10, '2025-01-29', 'Izin');
+INSERT INTO "public"."absensi" VALUES (185, 8, '2025-01-29', 'Izin');
+INSERT INTO "public"."absensi" VALUES (186, 2, '2025-01-29', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (187, 4, '2025-01-29', 'Izin');
+INSERT INTO "public"."absensi" VALUES (188, 2, '2025-01-29', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (189, 8, '2025-01-29', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (190, 3, '2025-01-29', 'Izin');
+INSERT INTO "public"."absensi" VALUES (191, 2, '2025-01-30', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (192, 5, '2025-01-30', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (193, 7, '2025-01-30', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (194, 3, '2025-01-31', 'Izin');
+INSERT INTO "public"."absensi" VALUES (195, 8, '2025-01-31', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (196, 4, '2025-01-31', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (197, 6, '2025-01-31', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (198, 6, '2025-01-31', 'Hadir');
+INSERT INTO "public"."absensi" VALUES (199, 5, '2025-01-31', 'Alpha');
+INSERT INTO "public"."absensi" VALUES (200, 8, '2025-01-31', 'Izin');
+
+-- ----------------------------
+-- Primary Key structure for table absensi
+-- ----------------------------
+ALTER TABLE "public"."absensi" ADD CONSTRAINT "absensi_pkey" PRIMARY KEY ("id_absensi");
+
+-- ----------------------------
+-- Foreign Keys structure for table absensi
+-- ----------------------------
+ALTER TABLE "public"."absensi" ADD CONSTRAINT "absensi_id_karyawan_fkey" FOREIGN KEY ("id_karyawan") REFERENCES "public"."karyawan" ("id_karyawan") ON DELETE NO ACTION ON UPDATE NO ACTION;
