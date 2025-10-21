@@ -1,18 +1,3 @@
--- ----------------------------
--- Table structure for jabatan
--- ----------------------------
-DROP TABLE IF EXISTS "public"."jabatan";
-CREATE TABLE "public"."jabatan" (
-  "id_jabatan" int4 NOT NULL,
-  "nama_jabatan" varchar(100) COLLATE "pg_catalog"."default",
-  "gaji_pokok" numeric(12,2),
-  "id_tunjangan" int4
-)
-;
-
--- ----------------------------
--- Records of jabatan
--- ----------------------------
 INSERT INTO "public"."jabatan" VALUES (1, 'Direktur Utama
 Direktur Utama', 20000000.00, 1);
 INSERT INTO "public"."jabatan" VALUES (2, 'Direktur Operasional
@@ -34,13 +19,3 @@ INSERT INTO "public"."jabatan" VALUES (16, 'Internship', 2000000.00, 16);
 INSERT INTO "public"."jabatan" VALUES (17, 'Graphic Designer', 6000000.00, 17);
 INSERT INTO "public"."jabatan" VALUES (18, 'Staf Gudang', 4000000.00, 18);
 INSERT INTO "public"."jabatan" VALUES (19, 'Satpam', 3500000.00, 19);
-
--- ----------------------------
--- Primary Key structure for table jabatan
--- ----------------------------
-ALTER TABLE "public"."jabatan" ADD CONSTRAINT "jabatan_pkey" PRIMARY KEY ("id_jabatan");
-
--- ----------------------------
--- Foreign Keys structure for table jabatan
--- ----------------------------
-ALTER TABLE "public"."jabatan" ADD CONSTRAINT "jabatan_id_tunjangan_fkey" FOREIGN KEY ("id_tunjangan") REFERENCES "public"."tunjangan" ("id_tunjangan") ON DELETE NO ACTION ON UPDATE NO ACTION;

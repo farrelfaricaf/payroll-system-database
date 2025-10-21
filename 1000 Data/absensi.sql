@@ -1,18 +1,3 @@
--- ----------------------------
--- Table structure for absensi
--- ----------------------------
-DROP TABLE IF EXISTS "public"."absensi";
-CREATE TABLE "public"."absensi" (
-  "id_absensi" int4 NOT NULL,
-  "id_karyawan" int4,
-  "tanggal" date,
-  "status_absensi" varchar(10) COLLATE "pg_catalog"."default"
-)
-;
-
--- ----------------------------
--- Records of absensi
--- ----------------------------
 INSERT INTO "public"."absensi" VALUES (1, 468, '2025-01-01', 'Alpha');
 INSERT INTO "public"."absensi" VALUES (2, 81, '2025-01-01', 'Izin');
 INSERT INTO "public"."absensi" VALUES (3, 587, '2025-01-01', 'Alpha');
@@ -5013,13 +4998,3 @@ INSERT INTO "public"."absensi" VALUES (4997, 858, '2025-12-01', 'Alpha');
 INSERT INTO "public"."absensi" VALUES (4998, 684, '2025-12-01', 'Izin');
 INSERT INTO "public"."absensi" VALUES (4999, 725, '2025-12-01', 'Alpha');
 INSERT INTO "public"."absensi" VALUES (5000, 824, '2025-12-01', 'Alpha');
-
--- ----------------------------
--- Primary Key structure for table absensi
--- ----------------------------
-ALTER TABLE "public"."absensi" ADD CONSTRAINT "absensi_pkey" PRIMARY KEY ("id_absensi");
-
--- ----------------------------
--- Foreign Keys structure for table absensi
--- ----------------------------
-ALTER TABLE "public"."absensi" ADD CONSTRAINT "absensi_id_karyawan_fkey" FOREIGN KEY ("id_karyawan") REFERENCES "public"."karyawan" ("id_karyawan") ON DELETE NO ACTION ON UPDATE NO ACTION;

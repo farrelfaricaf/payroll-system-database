@@ -1,23 +1,3 @@
--- ----------------------------
--- Table structure for riwayat_gaji
--- ----------------------------
-DROP TABLE IF EXISTS "public"."riwayat_gaji";
-CREATE TABLE "public"."riwayat_gaji" (
-  "id_gaji" int4 NOT NULL,
-  "id_karyawan" int4,
-  "periode" date,
-  "gaji_pokok" numeric(12,2),
-  "tunjangan" numeric(12,2),
-  "lembur" numeric(12,2),
-  "potongan" numeric(12,2),
-  "pajak" numeric(12,2),
-  "total_bersih" numeric(12,2)
-)
-;
-
--- ----------------------------
--- Records of riwayat_gaji
--- ----------------------------
 INSERT INTO "public"."riwayat_gaji" VALUES (1, 1, '2025-01-01', 4000000.00, 1180000.00, 0.00, 259000.00, 200000.00, 4721000.00);
 INSERT INTO "public"."riwayat_gaji" VALUES (2, 2, '2025-01-01', 2800000.00, 830000.00, 0.00, 181500.00, 50000.00, 3398500.00);
 INSERT INTO "public"."riwayat_gaji" VALUES (3, 3, '2025-01-01', 7000000.00, 2050000.00, 0.00, 452500.00, 600000.00, 7997500.00);
@@ -5018,13 +4998,3 @@ INSERT INTO "public"."riwayat_gaji" VALUES (4997, 997, '2025-05-01', 3500000.00,
 INSERT INTO "public"."riwayat_gaji" VALUES (4998, 998, '2025-05-01', 3500000.00, 400000.00, 0.00, 195000.00, 50000.00, 3655000.00);
 INSERT INTO "public"."riwayat_gaji" VALUES (4999, 999, '2025-05-01', 4500000.00, 1180000.00, 150000.00, 284000.00, 200000.00, 5346000.00);
 INSERT INTO "public"."riwayat_gaji" VALUES (5000, 1000, '2025-05-01', 5000000.00, 1450000.00, 150000.00, 322500.00, 200000.00, 6077500.00);
-
--- ----------------------------
--- Primary Key structure for table riwayat_gaji
--- ----------------------------
-ALTER TABLE "public"."riwayat_gaji" ADD CONSTRAINT "riwayat_gaji_pkey" PRIMARY KEY ("id_gaji");
-
--- ----------------------------
--- Foreign Keys structure for table riwayat_gaji
--- ----------------------------
-ALTER TABLE "public"."riwayat_gaji" ADD CONSTRAINT "riwayat_gaji_id_karyawan_fkey" FOREIGN KEY ("id_karyawan") REFERENCES "public"."karyawan" ("id_karyawan") ON DELETE NO ACTION ON UPDATE NO ACTION;

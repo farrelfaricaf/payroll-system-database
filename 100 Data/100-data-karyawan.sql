@@ -1,23 +1,3 @@
--- ----------------------------
--- Table structure for karyawan
--- ----------------------------
-DROP TABLE IF EXISTS "public"."karyawan";
-CREATE TABLE "public"."karyawan" (
-  "id_karyawan" int4 NOT NULL,
-  "nama_depan" varchar(50) COLLATE "pg_catalog"."default",
-  "nama_belakang" varchar(50) COLLATE "pg_catalog"."default",
-  "status" varchar(20) COLLATE "pg_catalog"."default",
-  "alamat" varchar(150) COLLATE "pg_catalog"."default",
-  "kota" varchar(100) COLLATE "pg_catalog"."default",
-  "kode_pos" varchar(10) COLLATE "pg_catalog"."default",
-  "id_jabatan" int4,
-  "kode_ptkp" varchar(5) COLLATE "pg_catalog"."default"
-)
-;
-
--- ----------------------------
--- Records of karyawan
--- ----------------------------
 INSERT INTO "public"."karyawan" VALUES (1, 'Ira', 'Aurora Hartati', 'aktif', 'Gg. Raden No. 385', 'Denpasar', '36616', 12, 'KI2');
 INSERT INTO "public"."karyawan" VALUES (2, 'Dipa', 'Reksa Siregar', 'aktif', 'Ki. Baladewa No. 606', 'Pangkal Pinang', '52740', 15, 'TK3');
 INSERT INTO "public"."karyawan" VALUES (3, 'Tasnim', 'Kusumo', 'aktif', 'Gg. Bayam No. 574', 'Payakumbuh', '13565', 8, 'K3');
@@ -118,14 +98,3 @@ INSERT INTO "public"."karyawan" VALUES (97, 'Carla', 'Maryati', 'aktif', 'Jr. Ba
 INSERT INTO "public"."karyawan" VALUES (98, 'Pia', 'Winarsih', 'aktif', 'Jln. W.R. Supratman No. 751', 'Bitung', '55676', 8, 'TK0');
 INSERT INTO "public"."karyawan" VALUES (99, 'Eman', 'Permadi', 'aktif', 'Psr. Baha No. 46', 'Kendari', '65549', 17, 'K3');
 INSERT INTO "public"."karyawan" VALUES (100, 'Padma', 'Pertiwi', 'aktif', 'Jln. Bakin No. 307', 'Pontianak', '85627', 19, 'TK0');
-
--- ----------------------------
--- Primary Key structure for table karyawan
--- ----------------------------
-ALTER TABLE "public"."karyawan" ADD CONSTRAINT "karyawan_pkey" PRIMARY KEY ("id_karyawan");
-
--- ----------------------------
--- Foreign Keys structure for table karyawan
--- ----------------------------
-ALTER TABLE "public"."karyawan" ADD CONSTRAINT "karyawan_id_jabatan_fkey" FOREIGN KEY ("id_jabatan") REFERENCES "public"."jabatan" ("id_jabatan") ON DELETE NO ACTION ON UPDATE NO ACTION;
-ALTER TABLE "public"."karyawan" ADD CONSTRAINT "karyawan_kode_ptkp_fkey" FOREIGN KEY ("kode_ptkp") REFERENCES "public"."ref_ptkp" ("kode_ptkp") ON DELETE NO ACTION ON UPDATE NO ACTION;

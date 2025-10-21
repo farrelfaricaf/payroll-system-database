@@ -1,19 +1,3 @@
--- ----------------------------
--- Table structure for lembur
--- ----------------------------
-DROP TABLE IF EXISTS "public"."lembur";
-CREATE TABLE "public"."lembur" (
-  "id_lembur" int4 NOT NULL,
-  "id_karyawan" int4,
-  "jumlah_jam" int4,
-  "upah_lembur" numeric(12,2),
-  "tanggal" date
-)
-;
-
--- ----------------------------
--- Records of lembur
--- ----------------------------
 INSERT INTO "public"."lembur" VALUES (1, 43, 3, 150000.00, '2025-01-01');
 INSERT INTO "public"."lembur" VALUES (2, 71, 3, 150000.00, '2025-01-01');
 INSERT INTO "public"."lembur" VALUES (3, 35, 1, 50000.00, '2025-01-01');
@@ -2014,13 +1998,3 @@ INSERT INTO "public"."lembur" VALUES (1997, 41, 3, 150000.00, '2025-05-01');
 INSERT INTO "public"."lembur" VALUES (1998, 87, 1, 50000.00, '2025-05-01');
 INSERT INTO "public"."lembur" VALUES (1999, 72, 3, 150000.00, '2025-05-01');
 INSERT INTO "public"."lembur" VALUES (2000, 25, 2, 100000.00, '2025-05-01');
-
--- ----------------------------
--- Primary Key structure for table lembur
--- ----------------------------
-ALTER TABLE "public"."lembur" ADD CONSTRAINT "lembur_pkey" PRIMARY KEY ("id_lembur");
-
--- ----------------------------
--- Foreign Keys structure for table lembur
--- ----------------------------
-ALTER TABLE "public"."lembur" ADD CONSTRAINT "lembur_id_karyawan_fkey" FOREIGN KEY ("id_karyawan") REFERENCES "public"."karyawan" ("id_karyawan") ON DELETE NO ACTION ON UPDATE NO ACTION;
