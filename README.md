@@ -31,7 +31,7 @@ The main tables include:
 * **Data Dummy Generator:** Excel, [Data Dummy Maker](https://smalldev.tools/test-data-generator-online)
 
 ## 📂 Repository Contents
-* **/sql-scripts**: Contains SQL scripts for the database structure (DDL), the 15 nested queries, and (optionally) dummy data generation scripts.
+* **/Nested Query**: Contains SQL scripts for the 15 nested queries.
 * **/report**: Contains the final project report, including the normalization analysis and the query time comparison tables.
 * **/10 Data**, **/100 Data**, **/1000 Data**, **/10000 Data**: Each folder contains the `.sql` files with dummy data for the transactional tables (`Karyawan`, `Absensi`, etc.) corresponding to that specific test scale.
 
