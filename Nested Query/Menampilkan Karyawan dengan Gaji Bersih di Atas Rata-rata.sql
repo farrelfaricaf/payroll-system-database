@@ -1,0 +1,17 @@
+SELECT
+    k.id_karyawan,
+    k.nama_depan || ' ' || k.nama_belakang AS nama_lengkap,
+    r.total_bersih
+FROM
+    riwayat_gaji r
+JOIN
+    karyawan k ON r.id_karyawan = k.id_karyawan
+WHERE
+    r.periode = '2025-01-01'
+    AND r.total_bersih > (
+        SELECT AVG(r2.total_bersih)
+        FROM riwayat_gaji r2
+        WHERE r2.periode = '2025-01-01'
+    )
+ORDER BY
+    r.total_bersih DESC;
