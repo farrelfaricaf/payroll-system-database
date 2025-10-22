@@ -1,7 +1,5 @@
-INSERT INTO "public"."jabatan" VALUES (1, 'Direktur Utama
-Direktur Utama', 20000000.00, 1);
-INSERT INTO "public"."jabatan" VALUES (2, 'Direktur Operasional
-Direktur Operasional', 18000000.00, 2);
+INSERT INTO "public"."jabatan" VALUES (1, 'Direktur Utama', 20000000.00, 1);
+INSERT INTO "public"."jabatan" VALUES (2, 'Direktur Operasional', 18000000.00, 2);
 INSERT INTO "public"."jabatan" VALUES (3, 'Manajer Keuangan', 14000000.00, 3);
 INSERT INTO "public"."jabatan" VALUES (4, 'Manajer SDM', 14000000.00, 4);
 INSERT INTO "public"."jabatan" VALUES (5, 'Supervisor Akuntasi', 10000000.00, 5);
