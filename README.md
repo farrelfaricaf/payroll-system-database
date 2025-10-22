@@ -33,3 +33,20 @@ The main tables include:
 ## 📂 Repository Contents
 * **/sql-scripts**: Contains SQL scripts for the database structure (DDL), the 15 nested queries, and (optionally) dummy data generation scripts.
 * **/report**: Contains the final project report, including the normalization analysis and the query time comparison tables.
+* **/10 Data**, **/100 Data**, **/1000 Data**, **/10000 Data**: Each folder contains the `.sql` files with dummy data for the transactional tables (`Karyawan`, `Absensi`, etc.) corresponding to that specific test scale.
+
+## 🧪 How to Run the Tests
+
+To replicate the performance analysis, follow these steps in order:
+
+1.  Load the `Schema.sql` file to create all table structures.
+2.  Load the master data by running `jabatan.sql`, `ref_ptkp.sql`, and `tunjangan.sql`.
+3.  Load the data folders sequentially (starting with the `10` data folder, then `100`, `1000`, and `10000`).
+4.  After loading one data set (e.g., all files in the "10" folder), run/import all the query files to test them.
+5.  The purpose of loading one folder at a time is to observe the query execution time needed for each query against each specific data volume.
+6.  After finishing the test on one folder, **truncate** the `absensi`, `riwayat_gaji`, and `lembur` tables.
+7.  After truncating, import the files from the next folder (e.g., "100") and continue the test on the different data volumes.
+
+**Note:** The `Karyawan` table cannot be cleared using `TRUNCATE` (due to foreign key constraints). You must clear it manually by selecting all records and deleting them.
+
+Thank You
